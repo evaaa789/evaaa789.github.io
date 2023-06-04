@@ -4,9 +4,224 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>測試</title>
+    <title>台灣走走 Taiwalk</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
 </head>
 <body>
-    
+  <!-- header -->
+    <div class="header">
+        <img src="https://f2e-week1.vercel.app/logo-desktop.svg" alt="台灣走走 Tai walk">
+        <ul>
+            <li><a href="#">探索景點</a></li>
+            <li><a href="#">節慶活動</a></li>
+            <li><a href="#">品嘗美食</a></li>
+        </ul>
+    </div>
+  <!-- 探索台灣標題跟搜索 -->
+    <div class="toparea">
+      <div class="pagetitle">
+        <div class="title">
+          <h1>探索台灣之美</h1>
+          <h1>讓我們更親近這片土地</h1>
+        </div>
+        <div class="info">
+          <img src="https://f2e-week1.vercel.app/map-pin.svg" alt="map icon">
+          <p>台灣旅遊景點導覽 Taiwan Travel Guide</p>
+        </div>
+
+      </div>
+      <div class="search"></div>
+      <select name="active">
+        <option>探索景點</option>
+        <option>節慶活動</option>
+        <option>品嘗美食</option>
+      </select>
+      <label for="site-search"></label>
+      <input type="search" placeholder="你想去哪裡？請輸入關鍵字" id="site-search" name="q">
+      <button>
+        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.34755 14.2C8.34755 11.1072 10.8548 8.59999 13.9475 8.59999C17.0403 8.59999 19.5475 11.1072 19.5475 14.2C19.5475 17.2928 17.0403 19.8 13.9475 19.8C10.8548 19.8 8.34755 17.2928 8.34755 14.2ZM13.9475 7C9.9711 7 6.74756 10.2235 6.74756 14.2C6.74756 18.1764 9.9711 21.4 13.9475 21.4C16.2094 21.4 18.2276 20.357 19.5476 18.7258C19.549 18.9286 19.6271 19.1309 19.7818 19.2856L23.2618 22.7656C23.5742 23.0781 24.0808 23.0781 24.3932 22.7656C24.7056 22.4532 24.7056 21.9467 24.3932 21.6343L20.9132 18.1543C20.6897 17.9308 20.3669 17.8672 20.0868 17.9635C20.7596 16.8683 21.1475 15.5795 21.1475 14.2C21.1475 10.2235 17.924 7 13.9475 7Z" fill="white"/>
+          </svg>搜尋</button>
+    </div>
+  <!-- Banner幻燈片 -->
+    <div id="banner">    
+      <!-- 輪播圖片 -->
+      <div id="tab">
+          <img class="tabImg" src="/img/pc/ScenicSpotPicture.png" height="400"/>
+          <!-- <img class="tabImg" src="https://picsum.photos/id/223/1110/400" height="400"/>
+          <img class="tabImg" src="https://picsum.photos/id/224/1110/400" height="400"/>
+          <img class="tabImg" src="https://picsum.photos/id/225/1110/400" height="400"/>
+          <img class="tabImg" src="https://picsum.photos/id/226/1110/400" height="400"/>
+          <img class="tabImg" src="https://picsum.photos/id/227/1110/400" height="400"/> -->
+      </div>
+      <!-- 指示符 -->
+      <div class="lunbo_btn">
+        <span num="0" class="tabBtn hover"></span>
+        <span num="1" class="tabBtn"></span>
+        <span num="2" class="tabBtn"></span>
+        <span num="3" class="tabBtn"></span>
+      </div>
+      <!-- 左右切換按鈕 -->
+      <div class="arrow-prve">
+        <img src="/img/pc/Arrow-Left_disable.svg" alt="arrow-prve">
+      </div>
+      <div>新北市｜不厭亭</div>
+      <div class="arrow-next">
+        <img src="/img/pc/Arrow-Right.svg" alt="arrow-next">
+      </div>
+    </div> 
+  <!-- 近期活動card -->
+  <div class="event">
+    <div class="top">
+      <h3>近期活動</h3>
+      <a href="#">查看更多活動
+        <img src="/img/pc/arrow-right-s.svg" alt="">
+      </a>
+    </div>
+    <div class="event-card">
+      <div class="card">
+        <div class="photo">
+          <img src="/img/pc/EventPhoto_1.png" alt="">
+        </div>
+        <div class="event-info">
+          <div class="event">
+            <p>2021/10/30 - 2021/11/13</p>
+            <h4>2021日月潭花火音樂嘉年華</h4>
+          </div>
+          <div class="detail">
+            <div class="map"><img src="/img/pc/spot16.svg" alt="">南投縣</div>
+            <a href="#">詳細介紹 <img src="/img/pc/arrow-right-s.svg" alt=""></a>
+          </div> 
+        </div>
+      </div>
+      <div class="card">
+        <div class="photo">
+          <img src="/img/pc/EventPhoto_2.png" alt="">
+        </div>
+        <div class="event-info">
+          <div class="event">
+            <p>2021/10/30 - 2021/02/08</p>
+            <h4>山城花語溫泉系列活動–寶來不老溫泉季</h4>
+          </div>
+          <div class="detail">
+            <div class="map"><img src="/img/pc/spot16.svg" alt="">高雄市</div>
+            <a href="#">詳細介紹 <img src="/img/pc/arrow-right-s.svg" alt=""></a>
+          </div> 
+        </div>
+      </div>
+      <div class="card">
+        <div class="photo">
+          <img src="/img/pc/EventPhoto_3.png" alt="">
+        </div>
+        <div class="event-info">
+          <div class="event">
+            <p>2021/11/21 - 2021/11/21</p>
+            <h4>新北市萬金石馬拉松</h4>
+          </div>
+          <div class="detail">
+            <div class="map">
+              <img src="/img/pc/spot16.svg" alt="">新北市
+            </div>
+            <a href="#">詳細介紹 <img src="/img/pc/arrow-right-s.svg" alt=""></a>          </div> 
+          </div>
+      </div>
+      <div class="card">
+        <div class="photo">
+          <img src="/img/pc/EventPhoto_4.png" alt="">
+        </div>
+        <div class="event-info">
+          <div class="event">
+          <p>2021/11/27 - 2021/11/28</p>
+            <h4>2021 金門坑道音樂節</h4>
+          </div>
+          <div class="detail">
+            <div class="map"><img src="/img/pc/spot16.svg" alt="">金門縣</div>
+            <a href="#">詳細介紹 <img src="/img/pc/arrow-right-s.svg" alt=""></a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 熱門打卡景點card -->
+  <div class="hot-check-in">
+    <div class="top">
+      <h3>熱門打卡景點</h3>
+      <a href="#">查看更多景點
+        <img src="/img/pc/arrow-right-s.svg" alt="">
+      </a>
+    </div>
+    <div class="check-in-card-area">
+      <div class="check-in-card">
+        <div class="photo">
+          <img src="/img/pc/RestaurantPicture_1.png" alt="">
+        </div>
+        <h4>龜山島牛奶海</h4>
+        <p><img src="/img/pc/spot16.svg" alt="">宜蘭縣</p>
+      </div>
+      <div class="check-in-card">
+        <div class="photo">
+          <img src="/img/pc/RestaurantPicture_2.png" alt="">
+        </div>
+        <h4>高美濕地(高美野生動物...</h4>
+        <p><img src="/img/pc/spot16.svg" alt="">台中市</p>
+      </div>
+      <div class="check-in-card">
+        <div class="photo">
+          <img src="/img/pc/RestaurantPicture_3.png" alt="">
+        </div>
+        <h4>溪頭自然教育園區</h4>
+        <p><img src="/img/pc/spot16.svg" alt="">南投縣</p>
+      </div>
+      <div class="check-in-card">'
+        <div class="photo">
+          <img src="/img/pc/RestaurantPicture_4.png" alt="">
+        </div>
+        <h4>九費老街</h4>
+        <p><img src="/img/pc/spot16.svg" alt="">新北市</p>
+      </div>
+    </div>
+  </div>
+  <!-- 一再回訪美食card -->
+  <div class="food-check-in">
+    <div class="top">
+      <h3>一再回訪美食</h3>
+      <a href="#">查看更多美食<img src="/img/pc/arrow-right-s.svg" alt=""></a>
+    </div>
+    <div class="check-in-card-area">
+      <div class="check-in-card">
+        <div class="photo">
+          <img src="/img/pc/RestaurantPicture_5.png" alt="">
+        </div>
+        <h4>金都餐廳</h4>
+        <p><img src="/img/pc/spot16.svg" alt="">南投縣</p>
+      </div>
+      <div class="check-in-card">
+        <div class="photo">
+          <img src="/img/pc/RestaurantPicture_6.png" alt="">
+        </div>
+        <h4>一中8兩碳烤雞排</h4>
+        <p><img src="/img/pc/spot16.svg" alt="">台中市</p>
+      </div>
+      <div class="check-in-card">
+        <div class="photo">
+          <img src="/img/pc/RestaurantPicture_7.png" alt="">
+        </div>
+        <h4>名根烤肉食材宅配外送</h4>
+        <p><img src="/img/pc/spot16.svg" alt="">新北市</p>
+      </div>
+      <div class="check-in-card">
+        <div class="photo">
+          <img src="/img/pc/RestaurantPicture_8.png" alt="">
+        </div>
+        <h4>石桌羊肉店</h4>
+        <p><img src="/img/pc/spot16.svg" alt="">嘉義縣</p>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+    <div class="footer">
+      <p>#The F2E 3rd Week01 #Breakfast</p>
+      <p>小七ㄉ作業</p>
+    </div>
 </body>
 </html>

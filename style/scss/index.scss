@@ -1,0 +1,30 @@
+@import '_basic.scss';
+
+.hot-check-in{
+    .top{
+        h3{
+            
+        }
+    }
+}
+//美食
+.food-check-in{
+	padding:45px;
+	.top{
+		h3{
+			@include font(36px,300,$color-black1,left)
+		}
+	}
+	.check-in-card-area{
+
+	}
+}
+//footer
+.footer{
+	@include wh(100%,auto);
+	background-color: #65895f;
+	padding:20px;
+	p{
+		@include font(14px,400,$color-white,center);
+	}
+}

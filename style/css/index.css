@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+.food-check-in {
+  padding: 45px;
+}
+.food-check-in .top h3 {
+  font-family: "Noto Sans TC";
+  font-weight: 300;
+  font-size: 36px;
+  color: #1E1E1E;
+  text-align: left;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #65895f;
+  padding: 20px;
+}
+.footer p {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+}

@@ -18,3 +18,9 @@ $color-white: #FFFFFF;
   width:$width;
   height:$height;
 }
+@mixin flex($wrap,$justify-content,$align-items){
+  display: flex;
+  flex-wrap:$wrap;
+  justify-content:$justify-content;
+  align-items:$align-items;
+}

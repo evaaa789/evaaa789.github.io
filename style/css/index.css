@@ -1,6 +1,330 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+body {
+  max-width: 1200px;
+  min-width: 768px;
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 1130px;
+  margin: auto;
+  border-bottom: #e5e5e5 solid 1px;
+  padding: 25px 45px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: none;
+  justify-content: Space-between;
+  align-items: center;
+}
+.header ul {
+  display: flex;
+  flex-wrap: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header ul li {
+  margin-left: 20px;
+  padding: 10px;
+}
+.header ul li a {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 18px;
+  color: #646464;
+  text-align: right;
+  text-decoration: none;
+}
+
+.toparea {
+  padding: 130px 140px 50px 140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: Space-between;
+  align-items: center;
+}
+.toparea .pagetitle .title {
+  font-family: "Noto Sans TC";
+  font-weight: 300;
+  font-size: 48px;
+  color: #1E1E1E;
+  text-align: left;
+  line-height: 70px;
+}
+.toparea .pagetitle .title ins {
+  text-decoration: none;
+  border-bottom: 2px solid #E0DA48;
+}
+.toparea .pagetitle .info {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+.toparea .pagetitle .info p {
+  display: inline-block;
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 20px;
+  color: #646464;
+  text-align: left;
+  margin: 0 8px;
+}
+.toparea .function .search {
+  margin-bottom: 7px;
+}
+.toparea .function .search select {
+  width: 350px;
+  height: auto;
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  font-size: 16px;
+  color: #6E7D60;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  border: #e6e6e6 solid 1px;
+  padding: 10px 30px;
+}
+.toparea .function .search select option {
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  font-size: 16px;
+  color: #2F2F2F;
+  text-align: left;
+  letter-spacing: 20px;
+}
+.toparea .function .inputframe {
+  margin: 7px 0;
+}
+.toparea .function .inputframe input {
+  width: 350px;
+  height: auto;
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9E9E9E;
+  text-align: left;
+  background-color: #F9F9F9;
+  border: #e6e6e6 solid 1px;
+  border-radius: 6px;
+  padding: 10px 30px;
+}
+.toparea .function .searchbtn button {
+  display: flex;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  background-color: #65895f;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 120px;
+}
+.toparea .function .searchbtn button p {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 20px;
+}
+.toparea .function .searchbtn button:hover {
+  background-color: #7ba374;
+}
+
+.event {
+  padding: 0 20px;
+}
+.event .top {
+  margin: 10px 40px 10px 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: Space-between;
+  align-items: center;
+}
+.event .top h3 {
+  font-family: "Noto Sans TC";
+  font-weight: 300;
+  font-size: 36px;
+  color: #1E1E1E;
+  text-align: left;
+}
+.event .top a {
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  font-size: 16px;
+  color: #FF725E;
+  text-align: right;
+  text-decoration: none;
+}
+.event .event-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: Space-between;
+  align-items: center;
+}
+.event .event-card .card {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: none;
+  width: 540px;
+  height: 160px;
+  margin: 6px 5px;
+  border-radius: 12px;
+  background-color: #F9F9F9;
+  border: #e5e5e5 solid 1px;
+}
+.event .event-card .card .photo {
+  width: 160px;
+  height: 160px;
+  min-width: 160px;
+  overflow: hidden;
+  border-radius: 12px 0 0 12px;
+}
+.event .event-card .card .photo img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.event .event-card .card .event-info {
+  padding: 16px 30px;
+}
+.event .event-card .card .event-info .the-title p {
+  font-family: "Noto Sans TC";
+  font-weight: 200;
+  font-size: 16px;
+  color: #646464;
+  text-align: left;
+  line-height: 23px;
+}
+.event .event-card .card .event-info .the-title h4 {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 22px;
+  color: #2F2F2F;
+  text-align: left;
+  line-height: 30px;
+}
+.event .event-card .card .event-info .detail .map {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 16px;
+  color: #646464;
+  text-align: left;
+  position: absolute;
+  bottom: 15%;
+}
+.event .event-card .card .event-info .detail a {
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  font-size: 16px;
+  color: #7F977B;
+  text-align: right;
+  text-decoration: none;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+}
+.event .event-card .card:hover .photo {
+  overflow: hidden;
+}
+.event .event-card .card:hover .photo img {
+  width: 110%;
+  height: 110%;
+  transition: 0.3s;
+}
+
+.hot-check-in {
+  padding: 0 20px;
+}
+.hot-check-in .top {
+  margin: 10px 40px 10px 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: Space-between;
+  align-items: center;
+}
+.hot-check-in .top h3 {
+  font-family: "Noto Sans TC";
+  font-weight: 300;
+  font-size: 36px;
+  color: #1E1E1E;
+  text-align: left;
+}
+.hot-check-in .top a {
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  font-size: 16px;
+  color: #FF725E;
+  text-align: right;
+  text-decoration: none;
+}
+.hot-check-in .check-in-card-area {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: Space-between;
+  align-items: center;
+}
+.hot-check-in .check-in-card-area .check-in-card {
+  width: 255px;
+  height: auto;
+  margin: 15px;
+}
+.hot-check-in .check-in-card-area .check-in-card .photo {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.hot-check-in .check-in-card-area .check-in-card .photo img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.hot-check-in .check-in-card-area .check-in-card h4 {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 22px;
+  color: #2F2F2F;
+  text-align: left;
+  padding: 10px 0;
+}
+.hot-check-in .check-in-card-area .check-in-card p {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 16px;
+  color: #646464;
+  text-align: left;
+  line-height: 23px;
+}
+.hot-check-in .check-in-card-area .check-in-card p img {
+  margin-right: 5px;
+}
+.hot-check-in .check-in-card-area .check-in-card:hover .photo {
+  overflow: hidden;
+}
+.hot-check-in .check-in-card-area .check-in-card:hover .photo img {
+  width: 110%;
+  height: 110%;
+  transition: 0.5s;
+}
+
 .food-check-in {
-  padding: 45px;
+  padding: 0 20px;
+}
+.food-check-in .top {
+  margin: 10px 40px 10px 35px;
+  display: flex;
+  flex-wrap: none;
+  justify-content: Space-between;
+  align-items: center;
 }
 .food-check-in .top h3 {
   font-family: "Noto Sans TC";
@@ -9,6 +333,64 @@
   color: #1E1E1E;
   text-align: left;
 }
+.food-check-in .top a {
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  font-size: 16px;
+  color: #FF725E;
+  text-align: right;
+  text-decoration: none;
+}
+.food-check-in .check-in-card-area {
+  display: flex;
+  flex-wrap: none;
+  justify-content: Space-between;
+  align-items: center;
+}
+.food-check-in .check-in-card-area .check-in-card {
+  width: 255px;
+  height: auto;
+  margin: 15px;
+}
+.food-check-in .check-in-card-area .check-in-card .photo {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.food-check-in .check-in-card-area .check-in-card .photo img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.food-check-in .check-in-card-area .check-in-card h4 {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 22px;
+  color: #2F2F2F;
+  text-align: left;
+  padding: 10px 0;
+}
+.food-check-in .check-in-card-area .check-in-card p {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 16px;
+  color: #646464;
+  text-align: left;
+  line-height: 23px;
+}
+.food-check-in .check-in-card-area .check-in-card p img {
+  margin-right: 5px;
+}
+.food-check-in .check-in-card-area .check-in-card:hover .photo {
+  overflow: hidden;
+}
+.food-check-in .check-in-card-area .check-in-card:hover .photo img {
+  width: 110%;
+  height: 110%;
+  transition: 0.5s;
+}
+
 .footer {
   width: 100%;
   height: auto;

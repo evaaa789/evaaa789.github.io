@@ -1,22 +1,277 @@
 @import '_basic.scss';
-
-.hot-check-in{
-    .top{
-        h3{
-            
-        }
-    }
+body{
+	max-width:1200px;
+	min-width: 768px;
+	margin: auto;
 }
-//美食
-.food-check-in{
-	padding:45px;
+//header
+.header{
+	position: fixed;
+	z-index: 1;
+	width:100%;
+	max-width: 1130px;
+	margin: auto;
+	border-bottom: #e5e5e5 solid 1px;
+	padding:25px 45px;
+	background-color: $color-white;
+	@include flex(none,Space-between,center);
+	ul{
+		@include flex(none,flex-end,center);
+		li{
+			margin-left: 20px;
+			padding:10px;
+			a{
+				@include font(18px,400,$color-black3,right);
+				text-decoration:none;
+			}
+		}
+	}
+}
+//大標題
+.toparea{
+	padding:130px 140px 50px 140px;
+	@include flex(wrap,Space-between,center);
+	.pagetitle{
+		.title{
+			@include font(48px,300,$color-black1,left);
+			line-height: 70px;
+			ins{
+				text-decoration:none;
+				border-bottom: 2px solid #E0DA48;
+			}
+		}
+		.info{
+			margin-top: 15px;
+			@include flex(none,flex-start,center);
+			p{
+				display: inline-block;
+				@include font(20px,400,$color-black3,left);
+				margin: 0 8px;
+			}
+		}
+	}
+	.function{
+		.search{
+			margin-bottom: 7px;
+			select{
+				@include wh(350px,auto);
+				@include font(16px,500,$color-green2,left);
+				background-color: $color-white;
+				border-radius: 6px;
+				border: #e6e6e6 solid 1px;
+				padding:10px 30px;
+				option{
+					@include font(16px,500,$color-black2,left);
+					letter-spacing: 20px;
+				}
+			}
+		}
+		.inputframe{
+			margin: 7px 0;
+			input{
+				@include wh(350px,auto);
+				@include font(16px,400,#9E9E9E,left);
+				background-color: #F9F9F9;
+				border: #e6e6e6 solid 1px;
+				border-radius: 6px;
+				padding:10px 30px;
+			}
+		}
+		.searchbtn{
+			button{
+				@include flex(none,space-evenly,center);
+				@include wh(350px,auto);
+				background-color: #65895f;
+				border:none;
+				border-radius: 6px;
+				padding:10px 120px;
+				p{
+					@include font(16px,700,$color-white,center);
+					letter-spacing: 20px
+				}
+			}
+			button:hover{
+				background-color: #7ba374;
+			}
+		}
+	}
+}
+
+//活動
+.event{
+	padding:0 20px;
 	.top{
+		margin: 10px 40px 10px 35px;
+		@include flex(nowrap,Space-between,center);
 		h3{
-			@include font(36px,300,$color-black1,left)
+			@include font(36px,300,$color-black1,left);
+		}
+		a{
+			@include font(16px,500,$color-red,right);
+			text-decoration:none;
+		}
+	}
+	.event-card{
+		@include flex(wrap,Space-between,center);
+		.card{
+			position: relative;
+			@include flex(nowrap,flex-start,none);
+			@include wh(540px,160px);
+			margin:6px 5px;
+			border-radius: 12px;
+			background-color: #F9F9F9;
+			border: #e5e5e5 solid 1px;
+			.photo{
+				@include wh(160px,160px);
+				min-width: 160px;
+				overflow: hidden;
+				border-radius:12px 0 0 12px;
+				img{
+					@include wh(100%,100%);
+					transition: 0.3s;
+				}
+			}
+			.event-info{
+				padding:16px 30px;
+				.the-title{
+					p{
+						@include font(16px,200,$color-black3,left);
+						line-height: 23px;
+					}
+					h4{
+						@include font(22px,700,$color-black2,left);
+						line-height: 30px;
+					}
+				}
+				.detail{
+					
+					.map{
+						@include font(16px,400,$color-black3,left);
+						position: absolute;
+						bottom:15%;
+					}
+					a{
+						@include font(16px,500,$color-green,right);
+						text-decoration:none;
+						position: absolute;
+						bottom:15%;
+						right:5%;
+					}
+				}
+			}
+		}
+		.card:hover{
+			.photo{
+				overflow: hidden;
+				img{
+					@include wh(110%,110%);
+					transition: 0.3s;
+				}
+			}
+		}
+
+	}
+}
+//景點
+.hot-check-in{
+	padding:0 20px;
+	.top{
+		margin: 10px 40px 10px 35px;
+		@include flex(nowrap,Space-between,center);
+		h3{
+			@include font(36px,300,$color-black1,left);
+		}
+		a{
+			@include font(16px,500,$color-red,right);
+			text-decoration:none;
 		}
 	}
 	.check-in-card-area{
-
+		@include flex(nowrap,Space-between,center);
+		.check-in-card{
+			@include wh(255px,auto);
+			margin:15px;
+			.photo{
+					@include wh(100%,200px);
+					border-radius:20px;
+					overflow: hidden;
+				img{
+					@include wh(100%,100%);
+					transition: 0.3s;
+				}
+			}
+			h4{
+				@include font(22px,700,$color-black2,left);
+				padding:10px 0;
+			}
+			p{
+				@include font(16px,400,$color-black3,left);
+				line-height: 23px;
+				img{
+					margin-right: 5px;
+				}
+			}
+		}
+		.check-in-card:hover{
+			.photo{
+				overflow: hidden;
+				img{
+					@include wh(110%,110%);
+					transition: 0.5s;
+				}
+			}
+		}
+	}
+}
+//美食
+.food-check-in{
+	padding:0 20px;
+	.top{
+		margin: 10px 40px 10px 35px;
+		@include flex(none,Space-between,center);
+		h3{
+			@include font(36px,300,$color-black1,left);
+		}
+		a{
+			@include font(16px,500,$color-red,right);
+			text-decoration:none;
+		}
+	}
+	.check-in-card-area{
+		@include flex(none,Space-between,center);
+		.check-in-card{
+			@include wh(255px,auto);
+			margin:15px;
+			.photo{
+					@include wh(100%,200px);
+					border-radius:20px;
+					overflow: hidden;
+				img{
+					@include wh(100%,100%);
+					transition: 0.3s;
+				}
+			}
+			h4{
+				@include font(22px,700,$color-black2,left);
+				padding:10px 0;
+			}
+			p{
+				@include font(16px,400,$color-black3,left);
+				line-height: 23px;
+				img{
+					margin-right: 5px;
+				}
+			}
+		}
+		.check-in-card:hover{
+			.photo{
+				overflow: hidden;
+				img{
+					@include wh(110%,110%);
+					transition: 0.5s;
+				}
+			}
+		}
 	}
 }
 //footer

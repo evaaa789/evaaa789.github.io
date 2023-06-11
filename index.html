@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>台灣走走 Taiwalk</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/style/css/index.css">
 </head>
 <body>
@@ -58,8 +59,25 @@
     <div id="banner">    
       <!-- 輪播圖片 -->
       <div id="tab">
-          <img class="tabImg" src="/img/pc/ScenicSpotPicture.png" height="400"/>
-          <!-- <img class="tabImg" src="https://picsum.photos/id/223/1110/400" height="400"/>
+        <section class="vertical-center-4 slider">
+          <div>
+            <img src="http://placehold.it/1200x400?text=1">
+          </div>
+          <div>
+            <img src="http://placehold.it/1200x400?text=2">
+          </div>
+          <div>
+            <img src="http://placehold.it/1200x400?text=3">
+          </div>
+          <div>
+            <img src="http://placehold.it/1200x400?text=4">
+          </div>
+          <div>
+            <img src="http://placehold.it/1200x400?text=5">
+          </div>
+        </section>
+        <!-- <img class="tabImg" src="/img/pc/ScenicSpotPicture.png" height="400"/> -->
+        <!-- <img class="tabImg" src="https://picsum.photos/id/223/1110/400" height="400"/>
           <img class="tabImg" src="https://picsum.photos/id/224/1110/400" height="400"/>
           <img class="tabImg" src="https://picsum.photos/id/225/1110/400" height="400"/>
           <img class="tabImg" src="https://picsum.photos/id/226/1110/400" height="400"/>
@@ -235,4 +253,15 @@
     <p>小七ㄉ作業</p>
   </div>
 </body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider').slick({
+      autoplay: true,
+      arrow: false,
+    });
+  });
+</script>
 </html>

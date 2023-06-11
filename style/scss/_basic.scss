@@ -24,3 +24,13 @@ $color-white: #FFFFFF;
   justify-content:$justify-content;
   align-items:$align-items;
 }
+@mixin pad{
+  @media screen and (max-width:768px){
+    @content;
+  }
+}
+@mixin mobile{
+  @media screen and (max-width:375px){
+    @content;
+  }
+}

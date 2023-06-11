@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 body {
   max-width: 1200px;
-  min-width: 768px;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
 }
 
 .header {
@@ -19,23 +28,108 @@ body {
   justify-content: Space-between;
   align-items: center;
 }
-.header ul {
+.header .logo {
+  width: 240px;
+  height: 32px;
+  background-image: url("https://f2e-week1.vercel.app/logo-desktop.svg");
+}
+.header label {
+  display: none;
+}
+.header input {
+  display: none;
+}
+.header .list {
   display: flex;
   flex-wrap: none;
   justify-content: flex-end;
   align-items: center;
 }
-.header ul li {
+.header .list li {
   margin-left: 20px;
   padding: 10px;
 }
-.header ul li a {
+.header .list li a {
   font-family: "Noto Sans TC";
   font-weight: 400;
   font-size: 18px;
   color: #646464;
   text-align: right;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 660px;
+    display: block;
+  }
+  .header label {
+    display: inline-block;
+    padding: 13.5px 10px;
+    background-color: #A8B8A5;
+    border-radius: 12px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+  .header .list {
+    position: fixed;
+    left: 0;
+    max-width: 768px;
+    display: block;
+    margin-top: 26px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+  }
+  .header .list li {
+    margin: auto;
+    padding: 10px 40%;
+    background-color: #FFFFFF;
+    border-bottom: #e6e6e6 solid 1px;
+  }
+  .header .list li a {
+    font-family: "Noto Sans TC";
+    font-weight: 400;
+    font-size: 18px;
+    color: #7F977B;
+    text-align: center;
+  }
+  .header .list li:hover {
+    background-color: #A8B8A5;
+  }
+  .header .list li:hover a {
+    color: #FFFFFF;
+  }
+  .header input:checked ~ .list {
+    max-height: 124px;
+    transition: 0.4s;
+  }
+  .header label:hover {
+    background-color: #beccbb;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    padding: 8px 8px;
+  }
+  .header .logo {
+    margin: 17px 0;
+    width: 118px;
+    height: 30px;
+    background-image: url("/img/mobile/Logo-mobile.png");
+    position: relative;
+    left: 110px;
+  }
+  .header label {
+    top: 15px;
+    right: 46%;
+  }
+  .header .list {
+    max-width: 375px;
+    margin-top: 9px;
+  }
 }
 
 .toparea {
@@ -72,6 +166,11 @@ body {
   color: #646464;
   text-align: left;
   margin: 0 8px;
+}
+@media screen and (max-width: 1130px) {
+  .toparea .pagetitle {
+    margin-bottom: 35px;
+  }
 }
 .toparea .function .search {
   margin-bottom: 7px;
@@ -176,6 +275,7 @@ body {
   align-items: none;
   width: 540px;
   height: 160px;
+  min-width: 345px;
   margin: 6px 5px;
   border-radius: 12px;
   background-color: #F9F9F9;
@@ -231,6 +331,12 @@ body {
   position: absolute;
   bottom: 15%;
   right: 5%;
+}
+@media screen and (max-width: 375px) {
+  .event .event-card .card {
+    width: 345px;
+    height: 160px;
+  }
 }
 .event .event-card .card:hover .photo {
   overflow: hidden;

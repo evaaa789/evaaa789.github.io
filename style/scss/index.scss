@@ -42,7 +42,7 @@ body{
 		}
 	}
   @include pad{
-    max-width: 660px;
+    max-width: 768px;
     display: block;
     label{
       display: inline-block;
@@ -51,7 +51,7 @@ body{
       border-radius: 12px;
       position: absolute;
       top:15px;
-      right:0;
+      right:15%;
     }
     .list{
       position:fixed;
@@ -89,6 +89,7 @@ body{
   }
   @include mobile{
     padding:8px 8px;
+    max-width:375px;
     .logo{
       margin:17px 0;
       @include wh(118px,30px);
@@ -98,7 +99,7 @@ body{
     }
     label{
       top:15px;
-      right:46%;
+      right:10%;
     }
     .list{
       max-width:375px;

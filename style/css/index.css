@@ -59,7 +59,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .header {
-    max-width: 660px;
+    max-width: 768px;
     display: block;
   }
   .header label {
@@ -69,7 +69,7 @@ body {
     border-radius: 12px;
     position: absolute;
     top: 15px;
-    right: 0;
+    right: 15%;
   }
   .header .list {
     position: fixed;
@@ -113,6 +113,7 @@ body {
 @media screen and (max-width: 375px) {
   .header {
     padding: 8px 8px;
+    max-width: 375px;
   }
   .header .logo {
     margin: 17px 0;
@@ -124,7 +125,7 @@ body {
   }
   .header label {
     top: 15px;
-    right: 46%;
+    right: 10%;
   }
   .header .list {
     max-width: 375px;

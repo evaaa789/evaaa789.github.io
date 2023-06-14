@@ -107,7 +107,6 @@ body{
     }
   }
 }
-
 //大標題
 .toparea{
 	padding:130px 140px 50px 140px;
@@ -120,6 +119,14 @@ body{
 				text-decoration:none;
 				border-bottom: 2px solid #E0DA48;
 			}
+      @media screen and (max-width:1130px){
+        font-size: 40px;
+        text-align: center;
+      }
+      @include mobile{
+        @include font(28px,300,$color-black1,center);
+        line-height: 40px;
+      }
 		}
 		.info{
 			margin-top: 15px;
@@ -128,12 +135,21 @@ body{
 				display: inline-block;
 				@include font(20px,400,$color-black3,left);
 				margin: 0 8px;
+        @include pad{
+          @include font(14px,400,$color-black3,left);
+          .english{
+            @include font(12px,700,$color-black3,left);
+          }
+        }
 			}
-		}
+    }
     @media screen and (max-width:1130px){
       margin-bottom: 35px;
+      @include flex(none,none,center);
+      flex-direction:column;
+      transition: 1s;  
     }
-	}
+  }
 	.function{
 		.search{
 			margin-bottom: 7px;
@@ -148,7 +164,7 @@ body{
 					@include font(16px,500,$color-black2,left);
 					letter-spacing: 20px;
 				}
-			}
+      }
 		}
 		.inputframe{
 			margin: 7px 0;
@@ -179,6 +195,14 @@ body{
 			}
 		}
 	}
+  @include pad{
+    @include flex(none,none,center);
+      flex-direction:column;
+
+  }
+  @include mobile{
+    padding:100px 15px 50px 15px;
+  }
 }
 //活動
 .event{

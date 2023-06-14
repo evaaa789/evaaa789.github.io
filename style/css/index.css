@@ -152,6 +152,22 @@ body {
   text-decoration: none;
   border-bottom: 2px solid #E0DA48;
 }
+@media screen and (max-width: 1130px) {
+  .toparea .pagetitle .title {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .toparea .pagetitle .title {
+    font-family: "Noto Sans TC";
+    font-weight: 300;
+    font-size: 28px;
+    color: #1E1E1E;
+    text-align: center;
+    line-height: 40px;
+  }
+}
 .toparea .pagetitle .info {
   margin-top: 15px;
   display: flex;
@@ -168,9 +184,31 @@ body {
   text-align: left;
   margin: 0 8px;
 }
+@media screen and (max-width: 768px) {
+  .toparea .pagetitle .info p {
+    font-family: "Noto Sans TC";
+    font-weight: 400;
+    font-size: 14px;
+    color: #646464;
+    text-align: left;
+  }
+  .toparea .pagetitle .info p .english {
+    font-family: "Noto Sans TC";
+    font-weight: 700;
+    font-size: 12px;
+    color: #646464;
+    text-align: left;
+  }
+}
 @media screen and (max-width: 1130px) {
   .toparea .pagetitle {
     margin-bottom: 35px;
+    display: flex;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
   }
 }
 .toparea .function .search {
@@ -235,6 +273,20 @@ body {
 }
 .toparea .function .searchbtn button:hover {
   background-color: #7ba374;
+}
+@media screen and (max-width: 768px) {
+  .toparea {
+    display: flex;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  .toparea {
+    padding: 100px 15px 50px 15px;
+  }
 }
 
 .event {

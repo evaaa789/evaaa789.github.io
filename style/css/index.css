@@ -415,6 +415,18 @@ body {
   text-align: right;
   text-decoration: none;
 }
+@media screen and (max-width: 375px) {
+  .event .top {
+    margin: 8px 0px;
+  }
+  .event .top h3 {
+    font-family: "Noto Sans TC";
+    font-weight: 300;
+    font-size: 24px;
+    color: #1E1E1E;
+    text-align: left;
+  }
+}
 .event .event-card {
   display: flex;
   flex-wrap: wrap;
@@ -427,9 +439,9 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: none;
-  width: 540px;
+  width: 100%;
   height: 160px;
-  min-width: 345px;
+  max-width: 540px;
   margin: 6px 5px;
   border-radius: 12px;
   background-color: #F9F9F9;
@@ -486,10 +498,65 @@ body {
   bottom: 15%;
   right: 5%;
 }
+@media screen and (max-width: 1160px) {
+  .event .event-card .card {
+    max-width: 1160px;
+  }
+}
 @media screen and (max-width: 375px) {
   .event .event-card .card {
-    width: 345px;
-    height: 160px;
+    width: 100%;
+    height: 62px;
+    max-width: 375px;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 6px 5px;
+    border-radius: none;
+  }
+  .event .event-card .card .photo {
+    width: 90px;
+    height: 62px;
+    min-width: 90px;
+    border-radius: 8px;
+  }
+  .event .event-card .card .event-info {
+    padding: 2px 16px;
+  }
+  .event .event-card .card .event-info .the-title p {
+    font-family: "Noto Sans TC";
+    font-weight: 400;
+    font-size: 12px;
+    color: #646464;
+    text-align: left;
+    line-height: 17px;
+  }
+  .event .event-card .card .event-info .the-title h4 {
+    font-family: "Noto Sans TC";
+    font-weight: 700;
+    font-size: 15px;
+    color: #2F2F2F;
+    text-align: left;
+    line-height: 21px;
+    max-width: 235px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .event .event-card .card .event-info .detail .map {
+    font-family: "Noto Sans TC";
+    font-weight: 400;
+    font-size: 11px;
+    color: #646464;
+    text-align: left;
+    position: static;
+    line-height: 15px;
+    margin-top: 2px;
+  }
+  .event .event-card .card .event-info .detail .map img {
+    display: none;
+  }
+  .event .event-card .card .event-info .detail a {
+    display: none;
   }
 }
 .event .event-card .card:hover .photo {
@@ -499,6 +566,11 @@ body {
   width: 110%;
   height: 110%;
   transition: 0.3s;
+}
+@media screen and (max-width: 375px) {
+  .event {
+    padding: 10px 15px;
+  }
 }
 
 .hot-check-in {

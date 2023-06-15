@@ -282,8 +282,6 @@ body{
   }
 
 }
-
-
 //活動
 .event{
 	padding:0 20px;
@@ -297,14 +295,20 @@ body{
 			@include font(16px,500,$color-red,right);
 			text-decoration:none;
 		}
+    @include mobile{
+      margin: 8px 0px;
+      h3{
+        @include font(24px,300,$color-black1,left);
+      }
+    }
 	}
 	.event-card{
 		@include flex(wrap,Space-between,center);
 		.card{
 			position: relative;
 			@include flex(nowrap,flex-start,none);
-			@include wh(540px,160px);
-      min-width: 345px;
+			@include wh(100%,160px);
+      max-width: 540px;
 			margin:6px 5px;
 			border-radius: 12px;
 			background-color: #F9F9F9;
@@ -317,8 +321,8 @@ body{
 				img{
 					@include wh(100%,100%);
 					transition: 0.3s;
-				}
-			}
+        }
+      }
 			.event-info{
 				padding:16px 30px;
 				.the-title{
@@ -332,7 +336,6 @@ body{
 					}
 				}
 				.detail{
-					
 					.map{
 						@include font(16px,400,$color-black3,left);
 						position: absolute;
@@ -347,8 +350,52 @@ body{
 					}
 				}
 			}
+      @media screen and (max-width:1160px){
+        max-width: 1160px;
+      }
       @include mobile{
-        @include wh(345px,160px);
+        @include wh(100%,62px);
+        max-width: 375px;
+        background-color:$color-white;
+        border:none;
+        margin:6px 5px;
+        border-radius: none;
+        .photo{
+          @include wh(90px,62px);
+          min-width: 90px;
+          border-radius:8px;
+        }
+        .event-info{
+          padding:2px 16px;
+          .the-title{
+            p{
+              @include font(12px,400,$color-black3,left);
+              line-height: 17px;
+            }
+            h4{
+              @include font(15px,700,$color-black2,left);
+              line-height: 21px;
+              max-width: 235px;
+              white-space: nowrap; 
+              overflow:hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .detail{
+            .map{
+              img{
+                display: none;
+                }
+              @include font(11px,400,$color-black3,left);
+              position:static;
+              line-height: 15px;
+              margin-top: 2px;
+            }
+            a{
+              display: none;
+            }
+          }
+        }
       }
 		}
 		.card:hover{
@@ -360,8 +407,10 @@ body{
 				}
 			}
 		}
-
 	}
+  @include mobile{
+    padding:10px 15px;
+  }
 }
 //景點
 .hot-check-in{

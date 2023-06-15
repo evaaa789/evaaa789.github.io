@@ -4,9 +4,11 @@ body{
 	margin: auto;
   @include pad{
     max-width:768px;
+    margin: auto;
   }
   @include mobile{
     max-width:375px;
+    margin: auto;
   }
 }
 //header
@@ -201,49 +203,87 @@ body{
 
   }
   @include mobile{
-    padding:100px 15px 50px 15px;
+    padding:100px 15px 23px 15px;
   }
 }
 //banner
-.slider{
-  @include wh(1110px,400px);
-  border-radius:24px ;
+#tab{
+  max-width: 1200px;
+  max-height: 400px;
+  padding:45px;
   margin: auto;
-  overflow: hidden;
   position: relative;
-  img{
+  .slider{
     @include wh(100%,auto);
+    border-radius:24px ;
+    margin: auto;
+    overflow: hidden;
+    .photo{
+      @include wh(100%,400px);
+      background-image: url(/img/pc/ScenicSpotPicture.png);
+    }
+    .slick-prev{
+      @include wh(40px,40px);
+      border:none;
+      background-color: rgba($color: #ac797900, $alpha: 0);
+      font-size:0;
+      background-image: url(/img/pc/banner-arrow-left.png);
+      position: absolute;
+      z-index: 1;
+      top:50%;
+      left:2%;
+      @include mobile{
+        @include wh(0px,0px);
+      }
+    }
+    .slick-next{
+      @include wh(40px,40px);
+      border:none;
+      background-color: rgba($color: #ac797900, $alpha: 0);
+      font-size:0;
+      background-image: url(/img/pc/banner-arrow-right.png);
+      position: absolute;
+      z-index: 1;
+      top:50%;
+      right:2%;
+      @include mobile{
+        @include wh(0px,0px);
+      }
+    }
   }
-  .slick-prev{
-    @include wh(40px,40px);
-    border:none;
-    background-color: rgba($color: #ac797900, $alpha: 0);
-    font-size:0;
-    background-image: url(/img/pc/banner-arrow-left.png);
-    position: absolute;
-    z-index: 1;
-    top:50%;
-    left:2%;
+  @include pad{
+    max-width: 768px;
   }
-  .slick-next{
-    @include wh(40px,40px);
-    border:none;
-    background-color: rgba($color: #ac797900, $alpha: 0);
-    font-size:0;
-    background-image: url(/img/pc/banner-arrow-right.png);
-    position: absolute;
-    z-index: 1;
-    top:50%;
-    right:2%;
+  @include mobile{
+    max-width: 345px;
+    height:185px;
+    padding:15px;
+    .slider{
+      border-radius:16px ;
+      .photo{
+        @include wh(100%,185px);
+        background-image: url(/img/mobile/picture1.png);
+      }
+    }
   }
+  .banner-text{
+    @include wh(auto,auto);
+    @include font(28px,700,$color-white,center);
+    margin: auto;
+    position: relative;
+    top:-190px;
+    @include pad{
+      font-size:20px ;
+    }
+    @include mobile{
+      font-size: 16px;
+      top:-100px;
+    }
+  }
+
 }
-.banner-text{
-  @include wh(auto,auto);
-  @include font(28px,700,$color-white,center);
-  margin: auto;
-  position: relative;
-  top:-190px;
-}
+
+
 //活動
 .event{
 	padding:0 20px;

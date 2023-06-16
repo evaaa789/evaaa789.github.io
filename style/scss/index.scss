@@ -415,6 +415,13 @@ body{
 //景點
 .hot-check-in{
 	padding:0 20px;
+  max-height: 355px;
+  overflow: hidden;
+  @include mobile{
+    padding:0 0 0 15px ;
+    margin-top: 40px;
+    max-height: 275px;
+  }
 	.top{
 		margin: 10px 40px 10px 35px;
 		@include flex(nowrap,Space-between,center);
@@ -425,11 +432,21 @@ body{
 			@include font(16px,500,$color-red,right);
 			text-decoration:none;
 		}
+    @include mobile{
+      margin: 8px 0px;
+      padding-right: 15px;
+      h3{
+        @include font(24px,300,$color-black1,left);
+      }
+    }
 	}
 	.check-in-card-area{
 		@include flex(nowrap,Space-between,center);
+    overflow-x: auto;
+    padding-bottom: 12px;
 		.check-in-card{
 			@include wh(255px,auto);
+      min-width: 255px;
 			margin:15px;
 			.photo{
 					@include wh(100%,200px);
@@ -451,6 +468,24 @@ body{
 					margin-right: 5px;
 				}
 			}
+      @include mobile{
+        @include wh(220px,200px);
+        min-width: 220px;
+        margin:15px 15px 15px 0;
+        .photo{
+					@include wh(100%,160px);
+					border-radius:20px;
+        }
+        h4{
+          @include font(18px,700,$color-black2,left);
+          padding:6px 0;
+        }
+        p{
+          img{
+            margin-right: 5px;
+          }
+        }
+      }
 		}
 		.check-in-card:hover{
 			.photo{
@@ -465,7 +500,14 @@ body{
 }
 //美食
 .food-check-in{
-	padding:0 20px;
+	padding:0px 20px;
+  max-height: 355px;
+  overflow: hidden;
+  @include mobile{
+    padding:0 0 0 15px ;
+    max-height: 275px;
+    margin: 40px 0;
+  }
 	.top{
 		margin: 10px 40px 10px 35px;
 		@include flex(none,Space-between,center);
@@ -476,11 +518,21 @@ body{
 			@include font(16px,500,$color-red,right);
 			text-decoration:none;
 		}
+    @include mobile{
+      margin: 8px 0px;
+      padding-right: 15px;
+      h3{
+        @include font(24px,300,$color-black1,left);
+      }
+    }
 	}
 	.check-in-card-area{
 		@include flex(none,Space-between,center);
+    overflow-x: auto;
+    padding-bottom: 12px;
 		.check-in-card{
 			@include wh(255px,auto);
+      min-width: 255px;
 			margin:15px;
 			.photo{
 					@include wh(100%,200px);
@@ -502,6 +554,24 @@ body{
 					margin-right: 5px;
 				}
 			}
+      @include mobile{
+        @include wh(220px,200px);
+        min-width: 220px;
+        margin:15px 15px 15px 0;
+        .photo{
+					@include wh(100%,160px);
+					border-radius:20px;
+        }
+        h4{
+          @include font(18px,700,$color-black2,left);
+          padding:6px 0;
+        }
+        p{
+          img{
+            margin-right: 5px;
+          }
+        }
+      }
 		}
 		.check-in-card:hover{
 			.photo{

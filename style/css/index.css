@@ -415,6 +415,12 @@ body {
   text-align: right;
   text-decoration: none;
 }
+.event .top a img {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+}
 @media screen and (max-width: 375px) {
   .event .top {
     margin: 8px 0px;
@@ -607,6 +613,12 @@ body {
   text-align: right;
   text-decoration: none;
 }
+.hot-check-in .top a img {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+}
 @media screen and (max-width: 375px) {
   .hot-check-in .top {
     margin: 8px 0px;
@@ -730,6 +742,12 @@ body {
   color: #FF725E;
   text-align: right;
   text-decoration: none;
+}
+.food-check-in .top a img {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
 }
 @media screen and (max-width: 375px) {
   .food-check-in .top {

@@ -135,6 +135,106 @@ body {
   }
 }
 
+#banner {
+  padding: 140px 45px 30px 45px;
+}
+#banner .breadcrumb {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 16px;
+  color: #6E7D60;
+  text-align: left;
+  padding: 0 15px;
+}
+#banner #tab {
+  max-width: 1110px;
+  max-height: 400px;
+  padding: 30px 0;
+  margin: auto;
+  position: relative;
+}
+#banner #tab .slider {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  margin: auto;
+  overflow: hidden;
+}
+#banner #tab .slider .photo {
+  width: 100%;
+  height: 400px;
+  background-image: url(/img/pc/page-view/view-photo-1.png);
+}
+#banner #tab .slider .slick-prev {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(172, 121, 121, 0);
+  font-size: 0;
+  background-image: url(/img/pc/banner-arrow-left.png);
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 2%;
+}
+@media screen and (max-width: 375px) {
+  #banner #tab .slider .slick-prev {
+    width: 0px;
+    height: 0px;
+  }
+}
+#banner #tab .slider .slick-next {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(172, 121, 121, 0);
+  font-size: 0;
+  background-image: url(/img/pc/banner-arrow-right.png);
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 2%;
+}
+@media screen and (max-width: 375px) {
+  #banner #tab .slider .slick-next {
+    width: 0px;
+    height: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #banner #tab {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #banner #tab {
+    max-width: 345px;
+    height: 185px;
+    padding: 16px 0;
+  }
+  #banner #tab .slider {
+    border-radius: 16px;
+  }
+  #banner #tab .slider .photo {
+    width: 100%;
+    height: 185px;
+    background-image: url(/img/mobile/picture1.png);
+  }
+}
+@media screen and (max-width: 375px) {
+  #banner {
+    padding: 120px 15px 15px 15px;
+  }
+  #banner .breadcrumb {
+    font-family: "Noto Sans TC";
+    font-weight: 400;
+    font-size: 12px;
+    color: #6E7D60;
+    text-align: left;
+    padding: 0 0px;
+  }
+}
+
 .hot-check-in {
   padding: 0 20px;
   max-height: 355px;

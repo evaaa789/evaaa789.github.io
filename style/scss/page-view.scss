@@ -110,6 +110,82 @@ body{
   }
 }
 
+//banner
+#banner{
+  padding:140px 45px 30px 45px;
+  .breadcrumb{
+    @include font(16px,400,$color-green2,left);
+    padding:0 15px;
+  }
+  #tab{
+    max-width: 1110px;
+    max-height: 400px;
+    padding:30px 0;
+    margin: auto;
+    position: relative;
+    .slider{
+      @include wh(100%,auto);
+      border-radius:24px ;
+      margin: auto;
+      overflow: hidden;
+      .photo{
+        @include wh(100%,400px);
+        background-image: url(/img/pc/page-view/view-photo-1.png);
+      }
+      .slick-prev{
+        @include wh(40px,40px);
+        border:none;
+        background-color: rgba($color: #ac797900, $alpha: 0);
+        font-size:0;
+        background-image: url(/img/pc/banner-arrow-left.png);
+        position: absolute;
+        z-index: 1;
+        top:50%;
+        left:2%;
+        @include mobile{
+          @include wh(0px,0px);
+        }
+      }
+      .slick-next{
+        @include wh(40px,40px);
+        border:none;
+        background-color: rgba($color: #ac797900, $alpha: 0);
+        font-size:0;
+        background-image: url(/img/pc/banner-arrow-right.png);
+        position: absolute;
+        z-index: 1;
+        top:50%;
+        right:2%;
+        @include mobile{
+          @include wh(0px,0px);
+        }
+      }
+    }
+    @include pad{
+      max-width: 768px;
+    }
+    @include mobile{
+      max-width: 345px;
+      height:185px;
+      padding:16px 0;
+      .slider{
+        border-radius:16px ;
+        .photo{
+          @include wh(100%,185px);
+          background-image: url(/img/mobile/picture1.png);
+        }
+      }
+    }  
+  }
+  @include mobile{
+    padding:120px 15px 15px 15px;
+    .breadcrumb{
+      @include font(12px,400,$color-green2,left);
+      padding:0 0px;
+    }
+  }
+}
+
 //不能錯過的景點
 .hot-check-in{
 	padding:0 20px;

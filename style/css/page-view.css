@@ -136,7 +136,7 @@ body {
 }
 
 #banner {
-  padding: 140px 45px 30px 45px;
+  padding: 140px 45px 0px 45px;
 }
 #banner .breadcrumb {
   font-family: "Noto Sans TC";
@@ -233,6 +233,55 @@ body {
     text-align: left;
     padding: 0 0px;
   }
+}
+
+.about {
+  margin: 0 60px 30px 60px;
+}
+.about .view-title h2 {
+  font-family: "Noto Sans TC";
+  font-weight: 300;
+  font-size: 36px;
+  color: #1E1E1E;
+  text-align: left;
+  line-height: 52px;
+}
+.about .view-title .tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about .view-title .tag .tagstyle {
+  padding: 2px 20px;
+  border: #BEA363 solid 1px;
+  border-radius: 20px;
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 20px;
+  color: #BEA363;
+  text-align: center;
+  line-height: 28px;
+  margin: 12px 5px 12px 0;
+}
+.about .introduce {
+  padding: 20px 0;
+}
+.about .introduce h3 {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 20px;
+  color: #2F2F2F;
+  text-align: left;
+}
+.about .introduce p {
+  padding: 10px 0;
+  font-family: "Noto Sans TC";
+  font-weight: 300;
+  font-size: 18px;
+  color: #000;
+  text-align: justify;
+  line-height: 30px;
 }
 
 .hot-check-in {

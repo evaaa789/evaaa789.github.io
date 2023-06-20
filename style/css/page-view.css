@@ -284,6 +284,84 @@ body {
   line-height: 30px;
 }
 
+.infomation {
+  margin: 0 45px 60px 45px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.infomation .service {
+  margin-right: 30px;
+  padding: 20px 30px;
+  border-radius: 12px;
+  background-color: #F9F9F9;
+}
+.infomation .service ul li {
+  line-height: 30px;
+  margin: 12px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: none;
+}
+.infomation .service ul li h3 {
+  min-width: 100px;
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 20px;
+  color: #2F2F2F;
+  text-align: left;
+}
+.infomation .service ul li p {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 18px;
+  color: #2F2F2F;
+  text-align: left;
+}
+.infomation .service ul li p a {
+  color: #6E7D60;
+}
+.infomation .transportation .map {
+  width: 540px;
+  height: 250px;
+  background-image: url(/img/pc/page-view/googlemap.png);
+}
+.infomation .transportation .other h3 {
+  padding: 30px 0 20px 0;
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 20px;
+  color: #2F2F2F;
+  text-align: left;
+}
+.infomation .transportation .other .link {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: Space-between;
+  align-items: center;
+}
+.infomation .transportation .other .link a {
+  display: flex;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  max-width: 160px;
+  padding: 25px 42px;
+  border: #E5E5E5 1.3px solid;
+  text-decoration: none;
+}
+.infomation .transportation .other .link a p {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 16px;
+  color: #7F977B;
+  text-align: center;
+  line-height: 28px;
+}
+
 .hot-check-in {
   padding: 0 20px;
   max-height: 355px;

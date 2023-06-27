@@ -492,7 +492,7 @@ body {
 @media screen and (max-width: 375px) {
   .hot-check-in {
     padding: 0 0 0 15px;
-    margin-top: 40px;
+    margin: 40px 0;
     max-height: 275px;
   }
 }
@@ -535,6 +535,11 @@ body {
     font-size: 24px;
     color: #1E1E1E;
     text-align: left;
+    width: auto;
+    max-width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 .hot-check-in .check-in-card-area {

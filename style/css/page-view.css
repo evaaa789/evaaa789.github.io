@@ -390,6 +390,99 @@ body {
   text-align: center;
   line-height: 28px;
 }
+@media screen and (max-width: 1160px) {
+  .infomation {
+    display: flex;
+    flex-wrap: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .infomation .service {
+    margin-right: 0px;
+  }
+  .infomation .transportation .map {
+    margin-top: 30px;
+  }
+  .infomation .transportation .other .link a {
+    min-width: 100px;
+    margin: 0 4px;
+    padding: 25px 42px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .infomation {
+    margin: 0;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    flex-direction: column;
+  }
+  .infomation .service {
+    margin: auto;
+    padding: 30px 0px;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .infomation .service ul {
+    padding: 0px 15px;
+  }
+  .infomation .service ul li {
+    margin: 4px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: none;
+  }
+  .infomation .service ul li h3 {
+    font-size: 18px;
+    flex-shrink: 0;
+    flex-basis: 80px;
+  }
+  .infomation .service ul li p {
+    font-size: 16px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+  }
+  .infomation .service ul li p a {
+    word-break: break-all;
+  }
+  .infomation .transportation .map {
+    width: 345px;
+    height: 185px;
+    margin: auto;
+    border-radius: 12px;
+  }
+  .infomation .transportation .other {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  .infomation .transportation .other h3 {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  .infomation .transportation .other .link {
+    display: flex;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    flex-direction: column;
+  }
+  .infomation .transportation .other .link a {
+    margin: 4px 0;
+    border-radius: 12px;
+    max-width: auto;
+    background-color: #FFFFFF;
+    min-width: auto;
+    padding: 10px 132px;
+  }
+  .infomation .transportation .other .link a p {
+    letter-spacing: 3px;
+  }
+}
 
 .hot-check-in {
   padding: 0 20px;

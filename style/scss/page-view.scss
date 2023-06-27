@@ -298,6 +298,91 @@ body{
       }
     }
   }
+  @media screen and (max-width:1160px){
+    @include flex(none,flex-start ,flex-start);
+    flex-direction:column;
+    .service{
+      margin-right:0px ;
+    }
+    .transportation{
+      .map{
+        margin-top:30px;
+      }
+      .other{
+        .link{
+          a{
+            min-width: 100px;
+            margin: 0 4px;
+            padding:25px 42px;
+          }
+        }
+      }
+    }
+  }
+  @include mobile{
+    margin:0;
+    background-color: #F9F9F9;
+    @include flex(none,none,center);
+    flex-direction:column;
+    .service{
+      margin:auto ;
+      padding:30px 0px;
+      border-radius: 0;
+      background-color:transparent;
+      ul{
+        padding:0px 15px;
+        li{
+          margin:4px 0;
+          @include flex(wrap,flex-start,none);
+          h3{
+            font-size: 18px;
+            flex-shrink:0;
+            flex-basis:80px;
+          }
+          p{
+            font-size: 16px;
+            flex-grow:1;
+            flex-shrink:1;
+            flex-basis:200px;
+            a{
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
+    .transportation{
+      .map{
+        @include wh(345px,185px);
+        margin: auto;
+        border-radius:12px;
+      }
+      .other{
+        margin-bottom: 30px;
+        padding:0 15px;
+        h3{
+          padding:20px 0;
+          font-size: 18px;
+        }
+        .link{
+          @include flex(none,none,center);
+          flex-direction:column;
+          a{
+            margin: 4px 0;
+            border-radius:12px;
+            max-width:auto;
+            background-color: $color-white;
+            min-width:auto;
+            padding:10px 132px;
+            p{
+              letter-spacing: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 //不能錯過的景點
 .hot-check-in{

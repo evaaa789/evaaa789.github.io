@@ -216,6 +216,33 @@ body{
       line-height: 30px;
     }
   }
+  @include mobile{
+    margin:0 19px 18px 19px;
+    .view-title{
+      h2{
+        font-size: 24px;
+        line-height:35px ;
+      }
+      .tag{
+        .tagstyle{
+          font-size: 14px;
+          line-height: 20px;
+          margin:5px 5px 5px 0;
+        }
+      }
+    }
+    .introduce{
+      padding:13px 0;
+      h3{
+        @include font(18px,500,$color-black2,left);
+      }
+      p{
+        padding:8px 0;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
 }
 //詳細資訊
 .infomation{

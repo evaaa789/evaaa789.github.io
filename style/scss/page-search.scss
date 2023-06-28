@@ -109,7 +109,75 @@ body{
     }
   }
 }
-
+//搜索
+.searcharea{
+  padding:130px 50px 50px 50px;
+  .breadcrumb{
+    margin:10px 0 ;
+    @include flex(wrap,flex-start,center);
+    @include font(16px,400,$color-green2,left);
+    a{
+      text-decoration: none;
+    }
+    p{
+      margin: 0 4px;
+    }
+  }
+  .function{
+    @include flex(wrap,Space-between,center);
+    padding: 20px 0;
+		.search{
+      margin:3px 7px;
+      flex-grow:1;
+			select{
+				@include wh(100%,50px);
+				@include font(16px,500,$color-green2,left);
+				background-color: $color-white;
+				border-radius: 6px;
+				border: #e6e6e6 solid 1px;
+				padding:10px 30px;
+				option{
+					@include font(16px,500,$color-black2,left);
+					letter-spacing: 20px;
+				}
+      }
+      .district{
+        display: none;
+      }
+		}
+		.inputframe{
+			margin:3px 7px;
+      flex-grow:2;
+			input{
+				@include wh(100%,50px);
+				@include font(16px,400,#9E9E9E,left);
+				background-color: #F9F9F9;
+				border: #e6e6e6 solid 1px;
+				border-radius: 6px;
+				padding:10px 30px;
+			}
+		}
+		.searchbtn{
+      margin:3px 7px;
+      flex-grow:1;
+			button{
+				@include flex(none,space-evenly,center);
+				@include wh(100%,auto);
+				background-color: #65895f;
+				border:none;
+				border-radius: 6px;
+				padding:10px 50px;
+				p{
+					@include font(16px,700,$color-white,center);
+					letter-spacing: 20px
+				}
+			}
+			button:hover{
+				background-color: #7ba374;
+			}
+		}
+  }
+}
 
 
 //footer

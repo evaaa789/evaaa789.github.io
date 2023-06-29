@@ -177,7 +177,26 @@ body{
 			}
 		}
   }
+  @include mobile{
+    padding:90px 15px 25px 15px;
+    .breadcrumb{
+      font-size: 12px;
+    }
+    .function{
+      padding: 15px 0;
+      .search{
+        margin:3px 0;
+      }
+      .inputframe{
+        margin:3px 0;;
+        }
+      .searchbtn{
+        margin:3px 0;
+      }
+    }
+  }
 }
+//推薦熱門主題 
 .system-default{
   margin: 10px 30px 120px 30px;
   .title{

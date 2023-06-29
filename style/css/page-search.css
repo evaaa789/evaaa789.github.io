@@ -235,6 +235,26 @@ body {
 .searcharea .function .searchbtn button:hover {
   background-color: #7ba374;
 }
+@media screen and (max-width: 375px) {
+  .searcharea {
+    padding: 90px 15px 25px 15px;
+  }
+  .searcharea .breadcrumb {
+    font-size: 12px;
+  }
+  .searcharea .function {
+    padding: 15px 0;
+  }
+  .searcharea .function .search {
+    margin: 3px 0;
+  }
+  .searcharea .function .inputframe {
+    margin: 3px 0;
+  }
+  .searcharea .function .searchbtn {
+    margin: 3px 0;
+  }
+}
 
 .system-default {
   margin: 10px 30px 120px 30px;

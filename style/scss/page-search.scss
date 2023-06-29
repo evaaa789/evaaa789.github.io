@@ -236,7 +236,28 @@ body{
       }
     }
   }
-
+  @include mobile{
+    margin: 10px 10px 65px 10px;
+    .title{
+      margin: 0 4px;
+      h2{
+        font-size: 24px;
+      }
+    }
+    .content{
+      .card{
+        @include wh(auto,80px);
+        max-width: 165px;
+        margin:5px 5px ;
+        border-radius: 16px;
+        h3{
+          width: 165px;
+          font-size: 16px;
+          left:0;
+        }
+      }
+    }
+  }
 }
 
 //footer

@@ -308,6 +308,29 @@ body {
   height: auto;
   transition: 0.3s;
 }
+@media screen and (max-width: 375px) {
+  .system-default {
+    margin: 10px 10px 65px 10px;
+  }
+  .system-default .title {
+    margin: 0 4px;
+  }
+  .system-default .title h2 {
+    font-size: 24px;
+  }
+  .system-default .content .card {
+    width: auto;
+    height: 80px;
+    max-width: 165px;
+    margin: 5px 5px;
+    border-radius: 16px;
+  }
+  .system-default .content .card h3 {
+    width: 165px;
+    font-size: 16px;
+    left: 0;
+  }
+}
 
 .footer {
   width: 100%;

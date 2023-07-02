@@ -256,9 +256,143 @@ body {
   }
 }
 
+.system-default {
+  margin: 10px 30px 120px 30px;
+}
+.system-default .title {
+  margin: 0 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.system-default .title h2 {
+  font-family: "Noto Sans TC";
+  font-weight: 300;
+  font-size: 36px;
+  color: #1E1E1E;
+  text-align: left;
+}
+.system-default .title p {
+  padding: 0 6px;
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 18px;
+  color: #646464;
+  text-align: left;
+}
+.system-default .title p span {
+  color: #BEA363;
+}
+.system-default .card-area {
+  margin: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: Flex-start;
+  align-items: center;
+  align-content: Space-around;
+}
+.system-default .card-area .card {
+  max-width: 255px;
+  margin: 12px 15px;
+}
+.system-default .card-area .card a {
+  text-decoration: none;
+}
+.system-default .card-area .card a .phtot {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.system-default .card-area .card a .phtot img {
+  width: 100%;
+  height: auto;
+}
+.system-default .card-area .card a h4 {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 22px;
+  color: #2F2F2F;
+  text-align: left;
+  line-height: 31px;
+  margin-top: 10px;
+}
+.system-default .card-area .card a p {
+  margin-top: 6px;
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  font-size: 16px;
+  color: #646464;
+  text-align: left;
+}
+.system-default .page {
+  position: relative;
+  left: 38%;
+}
+.system-default .page .page-prev {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-color: #E5E5E5;
+  border-radius: 6px;
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 14px;
+  color: #65895F;
+  text-align: center;
+  position: relative;
+}
+.system-default .page .page-prev span {
+  position: absolute;
+  top: 7px;
+  left: 30%;
+}
+.system-default .page .page-current {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: #65895F solid 1px;
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 14px;
+  color: #65895F;
+  text-align: center;
+  position: relative;
+}
+.system-default .page .page-current span {
+  position: absolute;
+  top: 7px;
+  left: 37%;
+}
+.system-default .page a {
+  text-decoration: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: #E5E5E5 solid 1px;
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 14px;
+  color: #646464;
+  text-align: center;
+  position: relative;
+}
+.system-default .page a span {
+  position: absolute;
+  top: 7px;
+  left: 30%;
+}
+.system-default .page .page-next {
+  background-color: #7F977B;
+  color: #FFFFFF;
+}
+
 .footer {
   width: 100%;
   height: auto;
+  position: absolute;
+  left: 0;
   background-color: #65895f;
   padding: 20px;
 }

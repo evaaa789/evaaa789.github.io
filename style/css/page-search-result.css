@@ -387,6 +387,57 @@ body {
   background-color: #7F977B;
   color: #FFFFFF;
 }
+@media screen and (max-width: 375px) {
+  .system-default {
+    margin: 10px 10px 65px 10px;
+  }
+  .system-default .title {
+    margin: 0 4px;
+  }
+  .system-default .title h2 {
+    font-size: 24px;
+  }
+  .system-default .title p {
+    font-size: 14px;
+  }
+  .system-default .title p span {
+    padding: 0 6px;
+  }
+  .system-default .card-area {
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: Flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .system-default .card-area .card {
+    max-width: 345px;
+    margin: 5px 5px 13px 0;
+  }
+  .system-default .card-area .card a {
+    text-decoration: none;
+  }
+  .system-default .card-area .card a .phtot {
+    border-radius: 20px;
+    width: 345px;
+    height: 160px;
+  }
+  .system-default .card-area .card a .phtot img {
+    width: 100%;
+    height: auto;
+  }
+  .system-default .card-area .card a h4 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 6px;
+  }
+  .system-default .page {
+    margin-top: 75px;
+    position: relative;
+    left: 15%;
+  }
+}
 
 .footer {
   width: 100%;

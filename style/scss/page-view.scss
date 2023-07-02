@@ -483,6 +483,8 @@ body{
 //footer
 .footer{
 	@include wh(100%,auto);
+  position:absolute;
+  left:0;
 	background-color: #65895f;
 	padding:20px;
 	p{
